@@ -1,0 +1,283 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e7ebc5 0%, #cce2f5 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 5em;
+}
+
+nav {
+  width: 100%;
+  background: #264653;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #2a526d;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 5px;
+}
+
+.main-title {
+  font-size: 2.5em;
+  color: #264653;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 5em;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#reportTitle {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.chart-container {
+  width: 45%;
+  height: 300px;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.words-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.words-section h2 {
+  margin-bottom: 10px;
+}
+
+.words-section .negative-words,
+.words-section .positive-words {
+  flex-basis: calc(50% - 10px);
+}
+
+.words-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.words-section li {
+  background: #f4f4f9;
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 5px;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #264653;
+  transition: left 0.3s ease;
+  z-index: 1;
+}
+
+button:hover::before {
+  left: 0;
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+#downloadreport button {
+  background-color: #2a9d8f;
+}
+
+#downloadreport button:hover {
+  background-color: #2a9d8f;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between the search bars */
+  margin-bottom: 20px;
+}
+
+#searchForm1,
+#searchForm2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#searchDropdown1,
+#searchDropdown2 {
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  font-size: 16px;
+}
+
+#searchDropdown1:focus,
+#searchDropdown2:focus {
+  border-color: #007bff;
+}
+
+.words-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.words-section .negative-words,
+.words-section .positive-words {
+  width: 45%;
+  text-align: center;
+}
+
+.words-section img {
+  max-width: 100%;
+  height: auto;
+}
+.dte{
+  width: 300px;
+  height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+

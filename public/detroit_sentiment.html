@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Report</title>
+    <link rel="stylesheet" href="crumbl_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="detroit_index.html">Input</a></li>
+            <li><a href="detroit_sentiment.html">Sentiment Analysis</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <img class = "dte" src="dte.png">
+        <h2 id="reportTitle">Sentiment Analysis Report</h2>
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="sentimentLineChart"></canvas>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="downloadReport"><span>Download Report</span></button>
+            <button id="seeTopReviews"><span>See Recent Reviews</span></button>
+        </div>
+        <div class="words-section">
+            </div>
+        </div>
+    </div>
+    <script src="detroit_script.js"></script>
+</body>
+</html>

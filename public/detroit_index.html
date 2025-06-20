@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar_style.css">
+    <link rel="stylesheet" href="crumbl_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            id="hamburger"
+        >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+        <ul>
+            <li><a href="detroit_index.html">Cultivate.AI</a></li>
+        </ul>
+    </nav>
+    <div id="overlay"></div>
+    <div id="sidebar">
+        <div class="sidebar-title">Demos</div>
+        <a href="detroit_index.html" class="sidebar-item">
+            <div>Detroit Energy</div>
+        </a>
+        <a href="crumbl_index.html" class="sidebar-item">
+            <div>Crumbl Cookies</div>
+        </a>
+    </div>
+    
+    <div class="container">
+        <h1 class="main-title">Detroit Energy</h1>
+        <div class="search-container">
+            <form id="searchForm1">
+                <select id="searchDropdown1">
+                    <option value="" disabled selected>Select a type...</option>
+                    <option value="type1">Website</option>
+                    <option value="type2">Power Outage</option>
+                    <option value="type3">Customer Service</option>
+                    <option value="type4">Neutral</option>
+                    <option value="type5">Negative</option>
+                    <option value="type6">Positive</option>
+                    <option value="type7">Electricity</option>
+                    <option value="type8">Infrastructure</option>
+                    <option value="type9">Bill</option>
+                    <option value="type10">Select All</option>
+                </select>
+            </form>
+            <form id="searchForm2">
+                <select id="searchDropdown2">
+                    <option value="" disabled selected>Select a sector...</option>
+                    <option value="sector1">Website/Account Management</option>
+                    <option value="sector2">Electricity</option>
+                    <option value="sector3">Renewable Energy</option>
+                    <option value="sector4">Natural Gas</option>
+                    <option value="sector5">Other</option>
+                    <option value="sector6">Select All</option>
+                </select>
+            </form>
+        </div>
+        <button id="createSentimentAnalysisButton"><span>Create Sentiment Analysis</span></button>
+    </div>
+    <script src="detroit_script.js"></script>
+    <script src="sidebar_script.js"></script>
+</body>
+</html>

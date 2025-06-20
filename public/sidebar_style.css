@@ -1,0 +1,78 @@
+/* Sidebar styling */
+/* Hamburger Icon */
+#hamburger {
+  fill: #fff; /* White color for hamburger icon */
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 0px;
+  height: 100vh;
+  background-color: #2a9d8f; /* Complementary teal color for the sidebar */
+  color: #fff; /* White text color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Depth effect */
+  display: flex;
+  flex-direction: column;
+  padding-top: 0; /* Remove extra padding from the top */
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 1.5em; /* Adjust size as needed */
+  color: #fff; /* White text color */
+  padding: 1em;
+  background-color: #264653; /* Darker teal background */
+  text-align: center;
+  border-bottom: 1px solid #fff; /* Optional border for separation */
+  margin-bottom: 20px; /* Space between title and items */
+}
+
+/* Sidebar Items */
+.sidebar-item {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  font-size: 1.2em;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+  border-radius: 5px;
+}
+
+.sidebar-item:hover {
+  background-color: #264653; /* Darker teal for hover effect */
+  padding-left: 1.5em; /* Indentation effect */
+}
+
+/* Sidebar Item Icons */
+.sidebar-item > div {
+  padding: 0 1em;
+}
+
+/* Overlay */
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+
+
